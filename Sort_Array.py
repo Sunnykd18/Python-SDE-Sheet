@@ -5,6 +5,9 @@ class SortArray:
         high = a.length - 1
         while mid <= high:
             if a[mid] == 0:
+                temp = arr[low]
+                arr[low] = arr[mid]
+                arr[mid] = temp
                 # Swap(arr,arr[low],arr[mid])
                 low += 1
                 high += 1
